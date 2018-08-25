@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Mall-Api" />
+        <module name="Mall-Common" />
+        <module name="Mall-Interface" />
+        <module name="Mall-Service" />
+        <module name="MallApi" />
+        <module name="MallCommon" />
+        <module name="MallInterface" />
+        <module name="MallService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_33333" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

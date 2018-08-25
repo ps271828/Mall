@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+    
+    <dubbo:application name="Mall" version="0.0.1" />
+
+    <dubbo:protocol port="20880" name="dubbo" id="test" host="127.0.0.1" />
+
+    <dubbo:registry address="zookeeper://118.25.22.217:2181" protocol="zookeeper" />
+
+    <!--protocold对应的是上面的id不是name-->
+    <dubbo:service interface="com.ps.service.IUserService" class="com.ps.Impl.UserServiceImpl" id="IUserService" protocol="test" />
+
+</beans>
