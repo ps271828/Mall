@@ -1,5 +1,7 @@
 package com.ps.model;
 
+import com.ps.common.BaseModel;
+
 import java.io.Serializable;
 
 /**
@@ -7,7 +9,7 @@ import java.io.Serializable;
  * @Data:2018/8/16 21:56
  * @Description:测试用类
  */
-public class User implements Serializable {
+public class User extends BaseModel {
     private Integer id;
 
     private String name;
