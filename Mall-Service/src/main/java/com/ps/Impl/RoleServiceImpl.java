@@ -14,9 +14,8 @@ import java.util.List;
  */
 @Service
 public class RoleServiceImpl implements IRoleServeice, Serializable {
-
     @Override
-    public List<Role> getRoleByUserId(Long userId) {
+    public List<Role> getRoleListByRoleIdLisr(List<Integer> roleIdList) {
         return null;
     }
 }

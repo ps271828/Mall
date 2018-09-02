@@ -16,7 +16,7 @@ import java.util.List;
 public class FunServiceImpl implements IFunService, Serializable {
 
     @Override
-    public List<Fun> getFunByRoleId(Integer roleId) {
+    public List<Fun> getFunByRoleId(List<Integer> funIdList) {
         return null;
     }
 }
