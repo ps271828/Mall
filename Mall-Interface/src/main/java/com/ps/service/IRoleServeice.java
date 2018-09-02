@@ -12,8 +12,8 @@ import java.util.List;
 public interface IRoleServeice {
 
     /**
-     * 通过用户id获取相应的角色
-     * @param userId
+     * 通过用户id获取相应的角色id列表
+     * @param roleIdList
      */
-    List<Role> getRoleByUserId(Long userId);
+    List<Role> getRoleListByRoleIdLisr(List<Integer> roleIdList);
 }

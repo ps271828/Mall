@@ -12,10 +12,10 @@ import java.util.List;
 public interface IFunService {
 
     /**
-     * 通过角色id获取相应的功能列表
-     * @param roleId
+     * 通过功能id列表获取相应的功能列表
+     * @param funIdList
      * @return
      */
-    List<Fun> getFunByRoleId(Integer roleId);
+    List<Fun> getFunByRoleId(List<Integer> funIdList);
 
 }
