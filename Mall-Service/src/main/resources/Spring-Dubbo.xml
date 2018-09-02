@@ -14,6 +14,12 @@
     <dubbo:registry address="zookeeper://118.25.22.217:2181" protocol="zookeeper" />
 
     <!--protocold对应的是上面的id不是name-->
-    <dubbo:service interface="com.ps.service.IUserService" class="com.ps.Impl.UserServiceImpl" id="IUserService" protocol="test" />
+    <!--用户相关服务-->
+    <dubbo:service interface="com.ps.service.IUserService" class="com.ps.Impl.UserServiceImpl" id="IUserService" protocol="test" retries="3" timeout="3000" />
 
+    <!--角色相关服务-->
+    <dubbo:service interface="com.ps.service.IRoleServeice" class="com.ps.Impl.RoleServiceImpl" id="IRoleService" protocol="test" retries="3" timeout="3000" />
+
+    <!--功能相关服务-->
+    <dubbo:service interface="com.ps.service.IFunService" class="com.ps.Impl.FunServiceImpl" id="IFunService" protocol="test" retries="3" timeout="3000" />
 </beans>

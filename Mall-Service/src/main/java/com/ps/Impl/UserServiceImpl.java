@@ -27,7 +27,7 @@ public class UserServiceImpl implements IUserService, Serializable {
         logger.info("远程服务调用成功！");
         System.out.println(1);
         User user = new User();
-        user.setId(1);
+        user.setId(1L);
         return userDao.getUser(user);
     }
 }

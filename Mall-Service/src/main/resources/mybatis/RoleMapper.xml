@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="RoleMapper">
+
+    <sql id="Role_Column">
+        id                     id,
+        role_name              roleName,
+        is_del                 isDel,
+        is_disable             isDisable,
+        create_time            createTime,
+        create_user_id         createUserId,
+        update_time            updateTime,
+        update_user_id         updateUserId
+    </sql>
+
+    <select id="selectRoleListByRoleIdList" parameterType="java.util.List" resultType="com.ps.model.Role" >
+        select <include refid="Role_Column" />
+        from  role
+        where id in
+        <foreach collection="lsit" open="(" close=")" separator="," item="id" >
+            #{id}
+        </foreach>
+    </select>
+</mapper>
+

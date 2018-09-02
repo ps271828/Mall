@@ -10,23 +10,23 @@ import java.io.Serializable;
  * @Description:测试用类
  */
 public class User extends BaseModel {
-    private Integer id;
+    private Long id;
 
-    private String name;
+    private String userName;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }
