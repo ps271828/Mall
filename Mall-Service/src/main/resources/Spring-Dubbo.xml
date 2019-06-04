@@ -9,7 +9,7 @@
     
     <dubbo:application name="Mall" version="0.0.1" />
 
-    <dubbo:protocol port="20880" name="dubbo" id="test" host="127.0.0.1" />
+    <dubbo:protocol port="20882" name="dubbo" id="test" host="127.0.0.1" />
 
     <dubbo:registry address="zookeeper://118.25.22.217:2181" protocol="zookeeper" />
 
